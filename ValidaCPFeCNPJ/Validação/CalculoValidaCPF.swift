@@ -8,64 +8,58 @@
 import Foundation
 
 class CalculoValidaCPF: RegrasDoCalculo {
+    
     func validaCampo(numeroConsultado: String) -> String {
-        
-        let penultimoDigito = [10,9,8,7,6,5,4,3,2]
-        let ultimoDigito = [11,10,9,8,7,6,5,4,3,2]
-        var soma: Int = 0
-        var resto: Int
-        
-        //guard let textoCpf = view1.t else { return }
+         
+         let penultimoDigito = [10,9,8,7,6,5,4,3,2]
+         let ultimoDigito = [11,10,9,8,7,6,5,4,3,2]
+         var soma: Int = 0
+         var resto: Int
+         
+         let posicao = numeroConsultado
+         let cpf = posicao.map { Int(String($0))! }
+     
+         if (numeroConsultado.count != 11 ||
+                 numeroConsultado == "00000000000" ||
+                 numeroConsultado == "11111111111" ||
+                 numeroConsultado == "22222222222" ||
+                 numeroConsultado == "33333333333" ||
+                 numeroConsultado == "44444444444" ||
+                 numeroConsultado == "55555555555" ||
+                 numeroConsultado == "66666666666" ||
+                 numeroConsultado == "77777777777" ){
+             return "CPF inválido!!"
+         }else{
+             for i in 0..<9{
+                 soma+=(cpf[i] * penultimoDigito[i])
+             }
+             resto = (soma * 10) % 11
+             if resto == 10{
+                 resto = 0
+             }
+             if resto != cpf[9]{
+                return "CPF inválido"
+                 
+                 // VERIFICA O ULTIMO NUMERO
 
-        //var posicao = textoCpf
-        let posicao = numeroConsultado
-        let cpf = posicao.map { Int(String($0))! }
-
-        if cpf[0] == cpf[1] && cpf[1] == cpf[2] && cpf[2] == cpf[3] && cpf[3] == cpf[4] && cpf[4] == cpf[5] && cpf[5] == cpf[6] && cpf[6] == cpf[7] && cpf[7] == cpf[8] && cpf[8] == cpf[9] && cpf[9] == cpf[10] {
-
-          //  resultadoCpf.text = "CPF Inválido."
-            
-    //VERIFICA O PENULTIMO NUMERO
-        }else{
-            for i in 0..<9{
-                soma+=(cpf[i] * penultimoDigito[i])
-            }
-            resto = (soma * 10) % 11
-            if resto == 10{
-                resto = 0
-            }
-            if resto != cpf[9]{
-               return "Invalido"
-                
-            //    resultadoCpf.text = "CPF Inválido!"
-            } else {
-                soma = 0
-                
-    // VERIFICA O ULTIMO NUMERO
-                
-                for i in 0..<10{
-                    soma+=(cpf[i] * ultimoDigito[i])
-                }
-                resto = (soma * 10) % 11
-                if resto == 10{
-                    resto = 0
-                }
-                if resto != cpf[10]{
-                    
-                  //  resultadoCpf.text = "CPF Inválido!"
-                   return "Invalido"
-                }else{
-                 //   resultadoCpf.text = "CPF Válido"
-                    return "Valido"
-                }
-        }
-
-        
-
-        }
-        return "Invalido"
-    }
-        
-    }
+             }else {
+                 soma = 0
+                 for i in 0..<10{
+                     soma+=(cpf[i] * ultimoDigito[i])
+                 }
+                 resto = (soma * 10) % 11
+                 if resto == 10{
+                     resto = 0
+                 }
+                 if resto != cpf[10]{
+                    return "CPF inválido"
+                 }else{
+                     return "CPF Valido!!"
+                 }
+         }
+         }
+        // return "CPF inválido"
+     }
+}
     
 
