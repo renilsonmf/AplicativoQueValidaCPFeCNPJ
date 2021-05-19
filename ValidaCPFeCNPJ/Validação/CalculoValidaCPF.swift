@@ -58,7 +58,6 @@ class CalculoValidaCPF: RegrasDoCalculo {
                  }
          }
          }
-        // return "CPF inválido"
      }
 }
     
