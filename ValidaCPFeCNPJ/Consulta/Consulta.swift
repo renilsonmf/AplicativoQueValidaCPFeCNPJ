@@ -21,10 +21,5 @@ class Consulta {
     func resultadoCampoDigitado() -> String{
         return regrasDoCalculo.validaCampo(numeroConsultado: numeroConsultado)
    }
-    
-  //  func campoDigitado(){
-      //  let setaDados = SetaDados()
-   //     setaDados.Imprimir(consulta: self)
-    //}
-    
+
 }

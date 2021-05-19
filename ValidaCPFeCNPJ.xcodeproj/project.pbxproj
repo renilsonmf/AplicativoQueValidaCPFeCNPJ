@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1C2880752655372600EA20D7 /* CPF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2880742655372600EA20D7 /* CPF.swift */; };
 		1C28807A2655390600EA20D7 /* RegrasDoCalculo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2880792655390600EA20D7 /* RegrasDoCalculo.swift */; };
-		1C28808F26553F3600EA20D7 /* SetaDados.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C28808E26553F3600EA20D7 /* SetaDados.swift */; };
 		1CFC194D265425C30062F282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC194C265425C30062F282 /* AppDelegate.swift */; };
 		1CFC194F265425C30062F282 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC194E265425C30062F282 /* SceneDelegate.swift */; };
 		1CFC1951265425C30062F282 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC1950265425C30062F282 /* ViewController.swift */; };
@@ -44,7 +43,6 @@
 /* Begin PBXFileReference section */
 		1C2880742655372600EA20D7 /* CPF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPF.swift; sourceTree = "<group>"; };
 		1C2880792655390600EA20D7 /* RegrasDoCalculo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegrasDoCalculo.swift; sourceTree = "<group>"; };
-		1C28808E26553F3600EA20D7 /* SetaDados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetaDados.swift; sourceTree = "<group>"; };
 		1CFC1949265425C30062F282 /* ValidaCPFeCNPJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValidaCPFeCNPJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CFC194C265425C30062F282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CFC194E265425C30062F282 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,14 +115,6 @@
 			path = Consulta;
 			sourceTree = "<group>";
 		};
-		1C28808D26553F1100EA20D7 /* SetaDados */ = {
-			isa = PBXGroup;
-			children = (
-				1C28808E26553F3600EA20D7 /* SetaDados.swift */,
-			);
-			path = SetaDados;
-			sourceTree = "<group>";
-		};
 		1CFC1940265425C30062F282 = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +142,6 @@
 				1C28807E265539CD00EA20D7 /* Protocolo */,
 				1C288083265539E900EA20D7 /* Consulta */,
 				1C288082265539D900EA20D7 /* Validação */,
-				1C28808D26553F1100EA20D7 /* SetaDados */,
 				1CFC1950265425C30062F282 /* ViewController.swift */,
 				1CFC194C265425C30062F282 /* AppDelegate.swift */,
 				1CFC194E265425C30062F282 /* SceneDelegate.swift */,
@@ -316,7 +305,6 @@
 			files = (
 				1C28807A2655390600EA20D7 /* RegrasDoCalculo.swift in Sources */,
 				1CFC1951265425C30062F282 /* ViewController.swift in Sources */,
-				1C28808F26553F3600EA20D7 /* SetaDados.swift in Sources */,
 				1CFC198D265429760062F282 /* Consulta.swift in Sources */,
 				1CFC1988265428230062F282 /* ValidaCNPJ.swift in Sources */,
 				1CFC19832654280F0062F282 /* CalculoValidaCPF.swift in Sources */,
