@@ -17,9 +17,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
        
     }
-    
-
-    @IBAction func buttonConsultar(_ sender: Any) {
+    func parametros(){
+        
         guard let textoCPF = textFieldCpf.text else {return}
         let validacaoCPF: CPF = CPF(numeroConsultado: textoCPF)
         
@@ -29,14 +28,14 @@ class ViewController: UIViewController {
             labelResultado.text = validacaoCPF.resultadoCampoDigitado()
             print(validacaoCPF.resultadoCampoDigitado())
         }
-      
-       
         
     }
-    func verificaCampos() {
-        if textFieldCpf == nil {
-        }
+  
+
+    @IBAction func buttonConsultar(_ sender: Any) {
+        parametros()
     }
-    
+  
 }
+    
 

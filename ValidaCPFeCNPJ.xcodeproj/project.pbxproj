@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1C2880752655372600EA20D7 /* CPF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2880742655372600EA20D7 /* CPF.swift */; };
 		1C28807A2655390600EA20D7 /* RegrasDoCalculo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2880792655390600EA20D7 /* RegrasDoCalculo.swift */; };
+		1C2880A8265573B600EA20D7 /* CalculoValidaCNPJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2880A7265573B600EA20D7 /* CalculoValidaCNPJ.swift */; };
+		1C2880AD265573D600EA20D7 /* CNPJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2880AC265573D600EA20D7 /* CNPJ.swift */; };
 		1CFC194D265425C30062F282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC194C265425C30062F282 /* AppDelegate.swift */; };
 		1CFC194F265425C30062F282 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC194E265425C30062F282 /* SceneDelegate.swift */; };
 		1CFC1951265425C30062F282 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC1950265425C30062F282 /* ViewController.swift */; };
@@ -43,6 +45,8 @@
 /* Begin PBXFileReference section */
 		1C2880742655372600EA20D7 /* CPF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPF.swift; sourceTree = "<group>"; };
 		1C2880792655390600EA20D7 /* RegrasDoCalculo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegrasDoCalculo.swift; sourceTree = "<group>"; };
+		1C2880A7265573B600EA20D7 /* CalculoValidaCNPJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculoValidaCNPJ.swift; sourceTree = "<group>"; };
+		1C2880AC265573D600EA20D7 /* CNPJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNPJ.swift; sourceTree = "<group>"; };
 		1CFC1949265425C30062F282 /* ValidaCPFeCNPJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValidaCPFeCNPJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CFC194C265425C30062F282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CFC194E265425C30062F282 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				1CFC19822654280F0062F282 /* CalculoValidaCPF.swift */,
+				1C2880A7265573B600EA20D7 /* CalculoValidaCNPJ.swift */,
 			);
 			name = "Validação";
 			path = "Validação";
@@ -111,6 +116,7 @@
 			children = (
 				1CFC198C265429760062F282 /* Consulta.swift */,
 				1C2880742655372600EA20D7 /* CPF.swift */,
+				1C2880AC265573D600EA20D7 /* CNPJ.swift */,
 			);
 			path = Consulta;
 			sourceTree = "<group>";
@@ -308,9 +314,11 @@
 				1CFC198D265429760062F282 /* Consulta.swift in Sources */,
 				1CFC1988265428230062F282 /* ValidaCNPJ.swift in Sources */,
 				1CFC19832654280F0062F282 /* CalculoValidaCPF.swift in Sources */,
+				1C2880A8265573B600EA20D7 /* CalculoValidaCNPJ.swift in Sources */,
 				1CFC1957265425C30062F282 /* ValidaCPFeCNPJ.xcdatamodeld in Sources */,
 				1C2880752655372600EA20D7 /* CPF.swift in Sources */,
 				1CFC194D265425C30062F282 /* AppDelegate.swift in Sources */,
+				1C2880AD265573D600EA20D7 /* CNPJ.swift in Sources */,
 				1CFC194F265425C30062F282 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
