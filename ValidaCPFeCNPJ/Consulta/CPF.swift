@@ -10,7 +10,9 @@ import UIKit
 class CPF: Consulta {
     
     init(numeroConsultado: String){
-        super.init(numeroConsultado: numeroConsultado, regrasDoCalculo: CalculoValidaCPF())
+        super.init(numeroConsultado: numeroConsultado, regrasDoCalculo:
+         CalculoValidaCPF())
+        
     }
     
 }
