@@ -10,39 +10,52 @@ import UIKit
 class ViewController: UIViewController {
         
     
-    @IBOutlet weak var textFieldCpf: UITextField!
-    @IBOutlet weak var textFieldCnpj: UITextField!
+    @IBOutlet weak var textFieldCpfCnpj: UITextField!
     @IBOutlet weak var labelResultado: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-    func parametros(){
-       
-        
-        
-           // labelResultado.text = "Favor preencher o campo CPF"
-     
-            //labelResultado.text = validacaoCPF.resultadoCampoDigitado()
-        }
-        
-
-    @IBAction func buttonConsultarCpf(_ sender: Any) {
-        
-        guard let textoCPF = textFieldCpf.text else {return}
-        let validacaoCPF: CPF = CPF(numeroConsultado: textoCPF)
-        labelResultado.text = validacaoCPF.resultadoCampoDigitado()
-        if labelResultado.text == "Valido!"{
-        }
-    }
-    @IBAction func buttonConsultarCnpj(_ sender: Any) {
-        
-        guard let textoCNPJ = textFieldCnpj.text else {return}
-        let validacaoCNPJ: CNPJ = CNPJ(numeroConsultado: textoCNPJ)
+    
+    func dadosCNPJ(){
+        guard let textoCpfCnpj = textFieldCpfCnpj.text else {return}
+        let validacaoCNPJ: CNPJ = CNPJ(numeroConsultado: textoCpfCnpj)
         labelResultado.text = validacaoCNPJ.resultadoCampoDigitado()
         
     }
+    func dadosCPF(){
+        guard let textoCpfCnpj = textFieldCpfCnpj.text else {return}
+        let validacaoCPF: CPF = CPF(numeroConsultado: textoCpfCnpj)
+        labelResultado.text = validacaoCPF.resultadoCampoDigitado()
+    }
+    @IBAction func buttonConsultarCpf(_ sender: Any) {
+        
+        guard let textoCpfCnpj = textFieldCpfCnpj.text else {return}
+
+        if textoCpfCnpj.count == 11{
+            dadosCPF()
+            
+        }
+        else if textoCpfCnpj.count == 14{
+            dadosCNPJ()
+            
+        }
+        else if textoCpfCnpj == ""{
+            labelResultado.text = "Preencha o campo!"
+        }else{
+            labelResultado.text = "Informe um CPF ou CNPJ valido!"
+        }
+        if labelResultado.text == "CPF Válido!" || labelResultado.text == "CNPJ Válido!"{
+            labelResultado.textColor = UIColor.systemGreen
+        }else{
+            labelResultado.textColor = UIColor.red
+           
+        }
+       
+    
+    }
+  
     
 }
     

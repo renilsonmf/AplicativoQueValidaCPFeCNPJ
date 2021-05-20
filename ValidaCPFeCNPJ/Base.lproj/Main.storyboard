@@ -3,7 +3,6 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,57 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wbi-GQ-EWp">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbi-GQ-EWp">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ex: 86249075518" textAlignment="center" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="uae-r0-KGD">
-                                        <rect key="frame" x="27" y="244" width="267" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.83165450507614214" green="0.82101905629165239" blue="0.82800479679611538" alpha="0.70641588184931503" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CPF/CNPJ" textAlignment="center" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="uae-r0-KGD">
+                                        <rect key="frame" x="11" y="250" width="353" height="70"/>
+                                        <color key="backgroundColor" red="0.83165450510000005" green="0.82101905630000005" blue="0.82800479680000005" alpha="0.70641588180000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="f4g-zH-GL4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="28"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CPF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCa-w7-fhV">
-                                        <rect key="frame" x="28" y="216" width="35" height="26"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="19"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ex: 79877349000166" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V34-UU-QSE">
-                                        <rect key="frame" x="28" y="337" width="266" height="43"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.83165450507614214" green="0.82101905629165239" blue="0.82800479679611538" alpha="0.70641588184931503" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="3"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CNPJ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSP-8j-R1t">
-                                        <rect key="frame" x="28" y="308" width="49" height="26"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="19"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeW-wj-rJO">
-                                        <rect key="frame" x="302" y="244" width="48" height="43"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeW-wj-rJO">
+                                        <rect key="frame" x="48" y="341" width="279" height="52"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="CCh-5a-Ebg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal">
-                                            <imageReference key="backgroundImage" image="magnifyingglass" catalog="system" renderingMode="template"/>
-                                        </state>
+                                        <state key="normal" title="Consultar"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="3"/>
@@ -77,56 +52,53 @@
                                             <action selector="buttonConsultarCpf:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fTu-B9-Kge"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vai-K8-x9K">
-                                        <rect key="frame" x="302" y="337" width="48" height="43"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal">
-                                            <imageReference key="backgroundImage" image="magnifyingglass" catalog="system" renderingMode="template"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="3"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="buttonConsultarCnpj:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JHx-8c-7IJ"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Consulta de CPF/CNPJ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJO-lR-XRm">
-                                        <rect key="frame" x="28" y="129" width="322" height="39"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consulta de CPF/CNPJ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJO-lR-XRm">
+                                        <rect key="frame" x="26" y="172" width="323" height="40"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="29"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Digite um CPF ou CNPJ!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYi-Jm-N0e">
-                                        <rect key="frame" x="27" y="414" width="322" height="63"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.83165450510000005" green="0.82101905630000005" blue="0.82800479680000005" alpha="0.70641588180000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYi-Jm-N0e">
+                                        <rect key="frame" x="11" y="420" width="353" height="33"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="U9L-Cn-rod"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="3"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="uae-r0-KGD" firstAttribute="leading" secondItem="wbi-GQ-EWp" secondAttribute="leading" constant="11" id="02b-8Z-hTE"/>
+                                    <constraint firstAttribute="trailing" secondItem="uae-r0-KGD" secondAttribute="trailing" constant="11" id="1d7-Jy-AsT"/>
+                                    <constraint firstItem="BJO-lR-XRm" firstAttribute="leading" secondItem="wbi-GQ-EWp" secondAttribute="leading" constant="26" id="LDk-jE-EzK"/>
+                                    <constraint firstItem="eeW-wj-rJO" firstAttribute="top" secondItem="uae-r0-KGD" secondAttribute="bottom" constant="21" id="PHD-7X-sut"/>
+                                    <constraint firstItem="UYi-Jm-N0e" firstAttribute="leading" secondItem="wbi-GQ-EWp" secondAttribute="leading" constant="11" id="RS6-xs-ayn"/>
+                                    <constraint firstAttribute="trailing" secondItem="UYi-Jm-N0e" secondAttribute="trailing" constant="11" id="S3J-wp-zZI"/>
+                                    <constraint firstItem="uae-r0-KGD" firstAttribute="top" secondItem="BJO-lR-XRm" secondAttribute="bottom" constant="38" id="Xch-yR-QC9"/>
+                                    <constraint firstItem="BJO-lR-XRm" firstAttribute="top" secondItem="wbi-GQ-EWp" secondAttribute="top" constant="172" id="aYn-2D-30b"/>
+                                    <constraint firstItem="eeW-wj-rJO" firstAttribute="leading" secondItem="wbi-GQ-EWp" secondAttribute="leading" constant="48" id="bRM-fU-zNl"/>
+                                    <constraint firstAttribute="trailing" secondItem="eeW-wj-rJO" secondAttribute="trailing" constant="48" id="epf-P0-FGU"/>
+                                    <constraint firstItem="UYi-Jm-N0e" firstAttribute="top" secondItem="eeW-wj-rJO" secondAttribute="bottom" constant="27" id="gS1-aa-saB"/>
+                                    <constraint firstAttribute="trailing" secondItem="BJO-lR-XRm" secondAttribute="trailing" constant="26" id="uHH-we-KVt"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wbi-GQ-EWp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BVr-XE-DTY"/>
+                            <constraint firstItem="wbi-GQ-EWp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="J8g-YX-Bh8"/>
+                            <constraint firstItem="wbi-GQ-EWp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="PW2-Qq-Vup"/>
+                            <constraint firstItem="wbi-GQ-EWp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XYb-5o-rE9"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="labelResultado" destination="UYi-Jm-N0e" id="hcb-w1-02z"/>
-                        <outlet property="textFieldCnpj" destination="V34-UU-QSE" id="SVy-NT-Xqq"/>
-                        <outlet property="textFieldCpf" destination="uae-r0-KGD" id="QfR-Fy-dhN"/>
+                        <outlet property="textFieldCpfCnpj" destination="uae-r0-KGD" id="QfR-Fy-dhN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -135,7 +107,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

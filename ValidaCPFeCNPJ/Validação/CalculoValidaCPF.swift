@@ -18,7 +18,7 @@ class CalculoValidaCPF: RegrasDoCalculo {
          
          let posicao = numeroConsultado
          let cpf = posicao.map { Int(String($0))! }
-     
+       
          if (numeroConsultado.count != 11 ||
                  numeroConsultado == "00000000000" ||
                  numeroConsultado == "11111111111" ||
@@ -28,7 +28,7 @@ class CalculoValidaCPF: RegrasDoCalculo {
                  numeroConsultado == "55555555555" ||
                  numeroConsultado == "66666666666" ||
                  numeroConsultado == "77777777777" ){
-             return "CPF inválido!!"
+             return "Informe um CPF ou CNPJ valido!!"
          }else{
              for i in 0..<9{
                  soma+=(cpf[i] * penultimoDigito[i])
@@ -38,7 +38,7 @@ class CalculoValidaCPF: RegrasDoCalculo {
                  resto = 0
              }
              if resto != cpf[9]{
-                return "CPF inválido"
+                return "Informe um CPF ou CNPJ valido!!"
                  
                  // VERIFICA O ULTIMO NUMERO
 
@@ -52,9 +52,9 @@ class CalculoValidaCPF: RegrasDoCalculo {
                      resto = 0
                  }
                  if resto != cpf[10]{
-                    return "CPF inválido"
+                    return "Informe um CPF ou CNPJ valido!!"
                  }else{
-                     return "CPF Valido!!"
+                     return "CPF Válido!"
                  }
          }
          }
