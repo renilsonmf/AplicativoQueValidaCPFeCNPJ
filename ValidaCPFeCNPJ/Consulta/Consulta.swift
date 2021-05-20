@@ -9,6 +9,7 @@ import UIKit
 
 class Consulta {
     
+    //passar o numero como parametro na func 
     var numeroConsultado: String
     var regrasDoCalculo: RegrasDoCalculo
     

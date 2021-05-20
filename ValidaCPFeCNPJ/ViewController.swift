@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
+
     
     func dadosCNPJ(){
         guard let textoCpfCnpj = textFieldCpfCnpj.text else {return}
@@ -32,7 +33,8 @@ class ViewController: UIViewController {
     @IBAction func buttonConsultarCpf(_ sender: Any) {
         
         guard let textoCpfCnpj = textFieldCpfCnpj.text else {return}
-
+        
+        // colocar em outra classe
         if textoCpfCnpj.count == 11{
             dadosCPF()
             
@@ -41,6 +43,8 @@ class ViewController: UIViewController {
             dadosCNPJ()
             
         }
+        
+        // enum com possiveis erros
         else if textoCpfCnpj == ""{
             labelResultado.text = "Preencha o campo!"
         }else{
@@ -50,7 +54,6 @@ class ViewController: UIViewController {
             labelResultado.textColor = UIColor.systemGreen
         }else{
             labelResultado.textColor = UIColor.red
-           
         }
        
     

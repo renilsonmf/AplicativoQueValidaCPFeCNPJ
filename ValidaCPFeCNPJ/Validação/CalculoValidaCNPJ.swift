@@ -26,7 +26,9 @@ class CalculoValidaCNPJ: RegrasDoCalculo {
                  numeroConsultado == "44444444444" ||
                  numeroConsultado == "55555555555" ||
                  numeroConsultado == "66666666666" ||
-                 numeroConsultado == "77777777777" ){
+                 numeroConsultado == "77777777777" ||
+                 numeroConsultado == "88888888888" ||
+                 numeroConsultado == "99999999999"){
              return "Informe um CPF ou CNPJ valido!!"
          }else{
              for i in 0..<12{
