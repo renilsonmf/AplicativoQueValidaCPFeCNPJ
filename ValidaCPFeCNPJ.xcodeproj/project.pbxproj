@@ -12,6 +12,10 @@
 		1C2880A8265573B600EA20D7 /* CalculoValidaCNPJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2880A7265573B600EA20D7 /* CalculoValidaCNPJ.swift */; };
 		1C2880AD265573D600EA20D7 /* CNPJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2880AC265573D600EA20D7 /* CNPJ.swift */; };
 		1CC9E4A12656FF1C0041EA8F /* RetornaDados.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC9E4A02656FF1C0041EA8F /* RetornaDados.swift */; };
+		1CD5239A2658290000964C37 /* CalculoValidaCPFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD523992658290000964C37 /* CalculoValidaCPFTests.swift */; };
+		1CD523A226582C2E00964C37 /* CalculoValidaCNPJTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD523A126582C2E00964C37 /* CalculoValidaCNPJTests.swift */; };
+		1CD523AD2658362B00964C37 /* RetornaDadosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD523AC2658362B00964C37 /* RetornaDadosTests.swift */; };
+		1CD523BB265845F200964C37 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD523BA265845F200964C37 /* ViewControllerTests.swift */; };
 		1CFC194D265425C30062F282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC194C265425C30062F282 /* AppDelegate.swift */; };
 		1CFC194F265425C30062F282 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC194E265425C30062F282 /* SceneDelegate.swift */; };
 		1CFC1951265425C30062F282 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC1950265425C30062F282 /* ViewController.swift */; };
@@ -19,7 +23,6 @@
 		1CFC1957265425C30062F282 /* ValidaCPFeCNPJ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC1955265425C30062F282 /* ValidaCPFeCNPJ.xcdatamodeld */; };
 		1CFC1959265425C90062F282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CFC1958265425C90062F282 /* Assets.xcassets */; };
 		1CFC195C265425C90062F282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CFC195A265425C90062F282 /* LaunchScreen.storyboard */; };
-		1CFC1967265425C90062F282 /* ValidaCPFeCNPJTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC1966265425C90062F282 /* ValidaCPFeCNPJTests.swift */; };
 		1CFC1972265425C90062F282 /* ValidaCPFeCNPJUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC1971265425C90062F282 /* ValidaCPFeCNPJUITests.swift */; };
 		1CFC19832654280F0062F282 /* CalculoValidaCPF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC19822654280F0062F282 /* CalculoValidaCPF.swift */; };
 		1CFC198D265429760062F282 /* Consulta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC198C265429760062F282 /* Consulta.swift */; };
@@ -48,6 +51,10 @@
 		1C2880A7265573B600EA20D7 /* CalculoValidaCNPJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculoValidaCNPJ.swift; sourceTree = "<group>"; };
 		1C2880AC265573D600EA20D7 /* CNPJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNPJ.swift; sourceTree = "<group>"; };
 		1CC9E4A02656FF1C0041EA8F /* RetornaDados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetornaDados.swift; sourceTree = "<group>"; };
+		1CD523992658290000964C37 /* CalculoValidaCPFTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculoValidaCPFTests.swift; sourceTree = "<group>"; };
+		1CD523A126582C2E00964C37 /* CalculoValidaCNPJTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculoValidaCNPJTests.swift; sourceTree = "<group>"; };
+		1CD523AC2658362B00964C37 /* RetornaDadosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetornaDadosTests.swift; sourceTree = "<group>"; };
+		1CD523BA265845F200964C37 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		1CFC1949265425C30062F282 /* ValidaCPFeCNPJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValidaCPFeCNPJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CFC194C265425C30062F282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CFC194E265425C30062F282 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +65,6 @@
 		1CFC195B265425C90062F282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CFC195D265425C90062F282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CFC1962265425C90062F282 /* ValidaCPFeCNPJTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidaCPFeCNPJTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CFC1966265425C90062F282 /* ValidaCPFeCNPJTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidaCPFeCNPJTests.swift; sourceTree = "<group>"; };
 		1CFC1968265425C90062F282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CFC196D265425C90062F282 /* ValidaCPFeCNPJUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidaCPFeCNPJUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CFC1971265425C90062F282 /* ValidaCPFeCNPJUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidaCPFeCNPJUITests.swift; sourceTree = "<group>"; };
@@ -157,8 +163,8 @@
 				1CC9E49C2656FDB70041EA8F /* Dados */,
 				1CFC1950265425C30062F282 /* ViewController.swift */,
 				1CFC194C265425C30062F282 /* AppDelegate.swift */,
-				1CFC194E265425C30062F282 /* SceneDelegate.swift */,
 				1CFC1952265425C30062F282 /* Main.storyboard */,
+				1CFC194E265425C30062F282 /* SceneDelegate.swift */,
 				1CFC1958265425C90062F282 /* Assets.xcassets */,
 				1CFC195A265425C90062F282 /* LaunchScreen.storyboard */,
 				1CFC195D265425C90062F282 /* Info.plist */,
@@ -170,7 +176,10 @@
 		1CFC1965265425C90062F282 /* ValidaCPFeCNPJTests */ = {
 			isa = PBXGroup;
 			children = (
-				1CFC1966265425C90062F282 /* ValidaCPFeCNPJTests.swift */,
+				1CD523992658290000964C37 /* CalculoValidaCPFTests.swift */,
+				1CD523A126582C2E00964C37 /* CalculoValidaCNPJTests.swift */,
+				1CD523AC2658362B00964C37 /* RetornaDadosTests.swift */,
+				1CD523BA265845F200964C37 /* ViewControllerTests.swift */,
 				1CFC1968265425C90062F282 /* Info.plist */,
 			);
 			path = ValidaCPFeCNPJTests;
@@ -333,7 +342,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CFC1967265425C90062F282 /* ValidaCPFeCNPJTests.swift in Sources */,
+				1CD5239A2658290000964C37 /* CalculoValidaCPFTests.swift in Sources */,
+				1CD523A226582C2E00964C37 /* CalculoValidaCNPJTests.swift in Sources */,
+				1CD523BB265845F200964C37 /* ViewControllerTests.swift in Sources */,
+				1CD523AD2658362B00964C37 /* RetornaDadosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

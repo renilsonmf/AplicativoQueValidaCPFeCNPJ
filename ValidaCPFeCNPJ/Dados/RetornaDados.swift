@@ -8,6 +8,7 @@
 import Foundation
 
 class RetornaDados {
+    
     func dados(textoCpfCnpj: String) -> Consulta {
         
         if textoCpfCnpj.count == 11{

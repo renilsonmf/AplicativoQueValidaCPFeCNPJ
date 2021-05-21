@@ -19,17 +19,17 @@ class CalculoValidaCNPJ: RegrasDoCalculo {
          let posicao = numeroConsultado
          let cpf = posicao.map { Int(String($0))! }
          if (numeroConsultado.count != 14 ||
-                 numeroConsultado == "00000000000" ||
-                 numeroConsultado == "11111111111" ||
-                 numeroConsultado == "22222222222" ||
-                 numeroConsultado == "33333333333" ||
-                 numeroConsultado == "44444444444" ||
-                 numeroConsultado == "55555555555" ||
-                 numeroConsultado == "66666666666" ||
-                 numeroConsultado == "77777777777" ||
-                 numeroConsultado == "88888888888" ||
-                 numeroConsultado == "99999999999"){
-             return "Informe um  ou CNPJ válido!"
+                 numeroConsultado == "00000000000000" ||
+                 numeroConsultado == "11111111111111" ||
+                 numeroConsultado == "22222222222222" ||
+                 numeroConsultado == "33333333333333" ||
+                 numeroConsultado == "44444444444444" ||
+                 numeroConsultado == "55555555555555" ||
+                 numeroConsultado == "66666666666666" ||
+                 numeroConsultado == "77777777777777" ||
+                 numeroConsultado == "88888888888888" ||
+                 numeroConsultado == "99999999999999"){
+             return "Informe um CPF ou CNPJ válido!"
          }else{
              for i in 0..<12{
                  soma+=(cpf[i] * penultimoDigito[i])
@@ -41,7 +41,7 @@ class CalculoValidaCNPJ: RegrasDoCalculo {
              }
             resto = 11 - resto
              if resto != cpf[12]{
-                return "Informe um CPF ou CNPJ valido!"
+                return "Informe um CNPJ válido!"
                 
                  // VERIFICA O ULTIMO NUMERO
 
@@ -56,7 +56,7 @@ class CalculoValidaCNPJ: RegrasDoCalculo {
                  }
                  resto = 11 - resto
                  if resto != cpf[13]{
-                    return "Informe um CPF ou CNPJ valido!"
+                    return "Informe um CNPJ válido!"
                  }else{
                      return "CNPJ Válido!"
                  }

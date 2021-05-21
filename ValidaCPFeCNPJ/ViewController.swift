@@ -13,11 +13,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var textFieldCpfCnpj: UITextField!
     @IBOutlet weak var labelResultado: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
     func resultadoDaConsulta(){
         guard let textoCpfCnpj = textFieldCpfCnpj.text else {return}
         let retornaDados: Consulta = RetornaDados().dados(textoCpfCnpj: textoCpfCnpj)

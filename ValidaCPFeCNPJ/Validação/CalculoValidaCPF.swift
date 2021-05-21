@@ -30,7 +30,7 @@ class CalculoValidaCPF: RegrasDoCalculo {
                  numeroConsultado == "77777777777" ||
                  numeroConsultado == "88888888888" ||
                  numeroConsultado == "99999999999"){
-             return "Informe um CPF válido!"
+             return "Informe um CPF ou CNPJ válido!"
          }else{
              for i in 0..<9{
                  soma+=(cpf[i] * penultimoDigito[i])
@@ -40,7 +40,7 @@ class CalculoValidaCPF: RegrasDoCalculo {
                  resto = 0
              }
              if resto != cpf[9]{
-                return "Informe um CPF ou CNPJ válido!"
+                return "Informe um CPF válido!"
                  
                  // VERIFICA O ULTIMO NUMERO
 
@@ -54,7 +54,7 @@ class CalculoValidaCPF: RegrasDoCalculo {
                      resto = 0
                  }
                  if resto != cpf[10]{
-                    return "Informe um CPF ou CNPJ válido!"
+                    return "Informe um CPF válido!"
                  }else{
                      return "CPF Válido!"
                  }
