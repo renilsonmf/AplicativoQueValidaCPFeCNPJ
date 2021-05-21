@@ -49,7 +49,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="buttonConsultarCpf:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fTu-B9-Kge"/>
+                                            <action selector="buttonConsultarCpfCnpj:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fTu-B9-Kge"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consulta de CPF/CNPJ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJO-lR-XRm">

@@ -22,7 +22,6 @@
 		1CFC1967265425C90062F282 /* ValidaCPFeCNPJTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC1966265425C90062F282 /* ValidaCPFeCNPJTests.swift */; };
 		1CFC1972265425C90062F282 /* ValidaCPFeCNPJUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC1971265425C90062F282 /* ValidaCPFeCNPJUITests.swift */; };
 		1CFC19832654280F0062F282 /* CalculoValidaCPF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC19822654280F0062F282 /* CalculoValidaCPF.swift */; };
-		1CFC1988265428230062F282 /* ValidaCNPJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC1987265428230062F282 /* ValidaCNPJ.swift */; };
 		1CFC198D265429760062F282 /* Consulta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC198C265429760062F282 /* Consulta.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,9 +64,7 @@
 		1CFC1971265425C90062F282 /* ValidaCPFeCNPJUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidaCPFeCNPJUITests.swift; sourceTree = "<group>"; };
 		1CFC1973265425C90062F282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CFC19822654280F0062F282 /* CalculoValidaCPF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculoValidaCPF.swift; sourceTree = "<group>"; };
-		1CFC1987265428230062F282 /* ValidaCNPJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidaCNPJ.swift; sourceTree = "<group>"; };
 		1CFC198C265429760062F282 /* Consulta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consulta.swift; sourceTree = "<group>"; };
-		1CFC1997265444960062F282 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +131,6 @@
 		1CFC1940265425C30062F282 = {
 			isa = PBXGroup;
 			children = (
-				1CFC1997265444960062F282 /* MyPlayground.playground */,
 				1CFC194B265425C30062F282 /* ValidaCPFeCNPJ */,
 				1CFC1965265425C90062F282 /* ValidaCPFeCNPJTests */,
 				1CFC1970265425C90062F282 /* ValidaCPFeCNPJUITests */,
@@ -155,10 +151,10 @@
 		1CFC194B265425C30062F282 /* ValidaCPFeCNPJ */ = {
 			isa = PBXGroup;
 			children = (
-				1CC9E49C2656FDB70041EA8F /* Dados */,
 				1C28807E265539CD00EA20D7 /* Protocolo */,
 				1C288083265539E900EA20D7 /* Consulta */,
 				1C288082265539D900EA20D7 /* Validação */,
+				1CC9E49C2656FDB70041EA8F /* Dados */,
 				1CFC1950265425C30062F282 /* ViewController.swift */,
 				1CFC194C265425C30062F282 /* AppDelegate.swift */,
 				1CFC194E265425C30062F282 /* SceneDelegate.swift */,
@@ -167,7 +163,6 @@
 				1CFC195A265425C90062F282 /* LaunchScreen.storyboard */,
 				1CFC195D265425C90062F282 /* Info.plist */,
 				1CFC1955265425C30062F282 /* ValidaCPFeCNPJ.xcdatamodeld */,
-				1CFC1987265428230062F282 /* ValidaCNPJ.swift */,
 			);
 			path = ValidaCPFeCNPJ;
 			sourceTree = "<group>";
@@ -323,7 +318,6 @@
 				1C28807A2655390600EA20D7 /* RegrasDoCalculo.swift in Sources */,
 				1CFC1951265425C30062F282 /* ViewController.swift in Sources */,
 				1CFC198D265429760062F282 /* Consulta.swift in Sources */,
-				1CFC1988265428230062F282 /* ValidaCNPJ.swift in Sources */,
 				1CFC19832654280F0062F282 /* CalculoValidaCPF.swift in Sources */,
 				1C2880A8265573B600EA20D7 /* CalculoValidaCNPJ.swift in Sources */,
 				1CFC1957265425C30062F282 /* ValidaCPFeCNPJ.xcdatamodeld in Sources */,
